@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: #f4f4f4;
     color: #333;
 }
@@ -43,7 +43,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?business,marketing') center/cover;
+    background: #4B0082;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -84,20 +84,18 @@ nav ul li a:hover {
 .section {
     padding: 80px 20px;
     text-align: center;
-    background: #fff;
 }
 
-.section:nth-child(even) {
-    background: #f4f4f4;
+#services {
+    background: #FFD700;
+    color: #4B0082;
 }
 
 h2 {
     font-size: 36px;
-    color: #4B0082;
     margin-bottom: 20px;
 }
 
-/* Service Boxes */
 .service-box {
     background: #4B0082;
     color: white;
@@ -112,13 +110,21 @@ h2 {
     color: #FFD700;
 }
 
-/* Contact Section */
+.about {
+    background: #4B0082;
+    color: white;
+}
+
+.contact {
+    background: #FFD700;
+    color: #4B0082;
+}
+
 .contact a {
     color: #4B0082;
     font-weight: bold;
 }
 
-/* Footer */
 footer {
     background: #4B0082;
     color: white;
