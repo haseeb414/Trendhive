@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrendHive - Digital Marketing Agency</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Navbar -->
     <header>
-        <h1>TrendHive</h1>
-        <p>Your Growth Partner in Digital Marketing</p>
+        <div class="logo">TrendHive</div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Hero Section with Image Slider -->
-    <section class="slider">
-        <div class="slides">
-            <div class="slide"><img src="https://www.freepik.com/free-photo/marketing-ideas-share-research-planning-concept_17431772.htm#fromView=search&page=1&position=4&uuid=e20744eb-f74b-4814-96c3-d64ffa7053ba&query=marketing" alt="Marketing"></div>
-            <div class="slide"><img src="https://source.unsplash.com/1600x600/?business,ads" alt="Ads"></div>
-            <div class="slide"><img src="https://source.unsplash.com/1600x600/?seo,technology" alt="SEO"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>TrendHive</span></h1>
+            <p>Your Growth Partner in Digital Marketing</p>
+            <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="section">
         <h2>Our Services</h2>
         <div class="service-box">
             <h3>📱 Social Media Marketing</h3>
             <p>Boost your brand’s presence with expert social media strategies.</p>
         </div>
         <div class="service-box">
-            <h3>📈 SEO Optimization</h3>
+            <h3>🔍 SEO Optimization</h3>
             <p>Improve your Google rankings and drive organic traffic.</p>
         </div>
         <div class="service-box">
@@ -47,20 +46,23 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Us Section -->
+    <section id="about" class="section about">
         <h2>About TrendHive</h2>
-        <p>We help businesses grow with innovative marketing strategies and data-driven campaigns.</p>
-        <img src="https://source.unsplash.com/1200x500/?team,success" alt="Our Team">
+        <p>We are a team of digital marketing experts dedicated to helping businesses grow through innovative marketing strategies and performance-driven campaigns.</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact">
         <h2>Contact Us</h2>
-        <p>📧 Email: <a href="mailto:trendhive1121@gmail.com">trendhive1121@gmail.com</a></p>
-        <p>📞 Call/WhatsApp: +92 0325 7723651</p>
+        <p>Email: <a href="mailto:trendhive1121@gmail.com">trendhive1121@gmail.com</a></p>
+        <p>Phone: <a href="tel:+9203257723651">+92 0325 7723651</a></p>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TrendHive. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
