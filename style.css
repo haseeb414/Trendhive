@@ -1,126 +1,119 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Global Styles */
+/* General Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFFFF;
-    color: #512D6D;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #f8f8f8; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
 }
 
 /* Header */
 header {
-    background-color: #512D6D;
-    padding: 15px 0;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #4B0082; /* Purple */
+    color: #FFD700; /* Yellow */
+    text-align: center;
+    padding: 20px;
 }
 
-.logo img {
-    width: 120px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+/* Navigation */
+nav {
+    text-align: center;
+    background: #663399; /* Dark Purple */
+    padding: 10px 0;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
+    color: #FFD700; /* Yellow */
     text-decoration: none;
-    color: #F7C948;
-    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #FFD700; /* Yellow */
+    color: #4B0082; /* Purple */
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background-color: #F7C948;
-    color: #512D6D;
+    background: linear-gradient(to right, #4B0082, #663399);
+    color: #FFD700;
 }
 
-.hero h1 {
-    font-size: 36px;
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #512D6D;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* Services */
+/* Services Section */
 .services {
+    padding: 40px;
     text-align: center;
-    padding: 50px 20px;
 }
 
 .services h2 {
-    color: #512D6D;
-}
-
-.service-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    color: #4B0082;
+    font-size: 2em;
 }
 
 .service-box {
-    background-color: #FFEAA7;
+    background: #fff;
     padding: 20px;
+    margin: 15px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
     width: 30%;
+    min-width: 250px;
 }
 
-/* About Section */
-.about {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #E5E5E5;
+.service-box h3 {
+    color: #4B0082;
+}
+
+.service-box p {
+    font-size: 16px;
 }
 
 /* Contact Section */
 .contact {
+    background: #4B0082;
+    color: #FFD700;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #512D6D;
-    color: #FFFFFF;
+    padding: 40px;
+}
+
+.contact h2 {
+    font-size: 2em;
+}
+
+.contact p {
+    font-size: 18px;
 }
 
 .contact a {
-    color: #F7C948;
+    color: #FFD700;
+    font-size: 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #3A1C5D;
-    color: #FFFFFF;
+.contact a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-box {
+        width: 80%;
+    }
 }
