@@ -1,0 +1,261 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #1E3C72, #2A5298);
+  color: #fff;
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  display: inline-block;
+  border-radius: 10px;
+}
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta {
+  background: linear-gradient(90deg, #00C6FF, #0072FF);
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+.cta:hover {
+  background: linear-gradient(90deg, #0072FF, #00C6FF);
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 0;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #1E3C72;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.about-content {
+  flex: 1;
+  margin-left: 40px;
+  min-width: 300px;
+}
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+.service-card h3 {
+  margin: 15px;
+  font-size: 1.5rem;
+  color: #1E3C72;
+}
+.service-card p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.team-member:hover {
+  transform: translateY(-10px);
+}
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto 15px;
+}
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #1E3C72;
+}
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Contact Section */
+.contact-details {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.contact-details a {
+  color: #0072FF;
+  text-decoration: none;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.contact-form button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #00C6FF, #0072FF);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background: linear-gradient(90deg, #0072FF, #00C6FF);
+}
+
+/* Footer */
+footer {
+  background-color: #1E3C72;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
