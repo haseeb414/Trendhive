@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #1E3C72, #2A5298);
+  background: linear-gradient(90deg, #5E2E90, #7B3FBF);
   color: #fff;
   padding: 20px 0;
 }
@@ -29,9 +29,16 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.logo {
-  font-size: 2rem;
+.logo-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.logo-text {
+  font-size: 1.8rem;
   font-weight: 700;
+  margin-right: auto;
 }
 nav ul {
   list-style: none;
@@ -51,6 +58,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
+  /* Placeholder background, replace if desired */
   background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
   color: #fff;
   text-align: center;
@@ -71,16 +79,18 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 .cta {
-  background: linear-gradient(90deg, #00C6FF, #0072FF);
-  color: #fff;
+  background: linear-gradient(90deg, #FDC52E, #FFDD00);
+  color: #4A3E3E;
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.1rem;
   transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 .cta:hover {
-  background: linear-gradient(90deg, #0072FF, #00C6FF);
+  background: linear-gradient(90deg, #FFDD00, #FDC52E);
 }
 
 /* Section Styles */
@@ -91,7 +101,7 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
-  color: #1E3C72;
+  color: #5E2E90;
 }
 
 /* About Section */
@@ -114,10 +124,22 @@ nav ul li a:hover {
 .about-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #5E2E90;
 }
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /* Services Section */
@@ -132,6 +154,7 @@ nav ul li a:hover {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 .service-card:hover {
   transform: translateY(-10px);
@@ -143,7 +166,7 @@ nav ul li a:hover {
 .service-card h3 {
   margin: 15px;
   font-size: 1.5rem;
-  color: #1E3C72;
+  color: #5E2E90;
 }
 .service-card p {
   margin: 0 15px 15px;
@@ -177,7 +200,7 @@ nav ul li a:hover {
 .team-member h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
-  color: #1E3C72;
+  color: #5E2E90;
 }
 .team-member p {
   font-size: 1rem;
@@ -191,7 +214,7 @@ nav ul li a:hover {
   font-size: 1.1rem;
 }
 .contact-details a {
-  color: #0072FF;
+  color: #5E2E90;
   text-decoration: none;
 }
 .contact-details a:hover {
@@ -215,8 +238,8 @@ nav ul li a:hover {
 .contact-form button {
   display: block;
   width: 100%;
-  background: linear-gradient(90deg, #00C6FF, #0072FF);
-  color: #fff;
+  background: linear-gradient(90deg, #FDC52E, #FFDD00);
+  color: #4A3E3E;
   border: none;
   padding: 15px;
   font-size: 1.1rem;
@@ -225,12 +248,12 @@ nav ul li a:hover {
   transition: background 0.3s ease;
 }
 .contact-form button:hover {
-  background: linear-gradient(90deg, #0072FF, #00C6FF);
+  background: linear-gradient(90deg, #FFDD00, #FDC52E);
 }
 
 /* Footer */
 footer {
-  background-color: #1E3C72;
+  background-color: #5E2E90;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -250,12 +273,7 @@ footer {
   nav ul li {
     margin: 10px 0;
   }
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-content {
-    margin-left: 0;
-    margin-top: 20px;
+  #hero h2 {
+    font-size: 2.5rem;
   }
 }
