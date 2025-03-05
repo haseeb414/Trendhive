@@ -4,119 +4,139 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TrendHive - Your Digital Growth Partner</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(90deg, #1E3C72, #2A5298);
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1rem;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-    }
-    .hero {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-    }
-    .cta {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .cta a {
-      background: linear-gradient(90deg, #00C6FF, #0072FF);
-      color: #fff;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
-    }
-    .cta a:hover {
-      background: linear-gradient(90deg, #0072FF, #00C6FF);
-    }
-    .about {
-      padding: 20px;
-      font-size: 1.1rem;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #1E3C72;
-      color: #fff;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
-      .hero p, .cta a, .about {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header and Navigation -->
   <header>
-    <h1>TrendHive</h1>
-    <p>Your Digital Growth Partner</p>
+    <div class="container header-container">
+      <h1 class="logo">TrendHive</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <div class="container">
-    <section class="hero">
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
       <h2>Welcome to TrendHive</h2>
-      <p>
-        We drive business growth through innovative digital marketing strategies.
-        Whether it's social media, SEO, or e-commerce marketing, our team is ready to elevate your brand.
-      </p>
-      <div class="cta">
-        <a href="tel:+9203257723651">Call Us: +92 0325 7723651</a>
+      <p>Your Digital Growth Partner – Elevating brands with innovative marketing strategies.</p>
+      <a class="cta" href="tel:+9203257723651">Call Us: +92 0325 7723651</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="https://via.placeholder.com/600x400" alt="About TrendHive" />
       </div>
-    </section>
-    
-    <section class="about">
-      <h2>About Us</h2>
-      <p>
-        TrendHive is a cutting-edge digital marketing agency that combines creativity, technology, and strategy to deliver measurable results.
-        Our mission is to help businesses unlock their full potential online.
-      </p>
-    </section>
-  </div>
-  
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          TrendHive is a cutting-edge digital marketing agency that blends creativity, technology, and strategy to deliver measurable results. Our mission is to help businesses unlock their full potential online using innovative techniques and data-driven strategies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x300" alt="Social Media Marketing" />
+          <h3>Social Media Marketing</h3>
+          <p>Boost your online presence with targeted social media campaigns that engage your audience.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x300" alt="SEO & Website Optimization" />
+          <h3>SEO & Website Optimization</h3>
+          <p>Improve your search rankings and attract organic traffic with expert SEO strategies.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x300" alt="E-commerce Marketing" />
+          <h3>E-commerce Marketing</h3>
+          <p>Drive sales and maximize conversions with specialized e-commerce marketing solutions.</p>
+        </div>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/400x300" alt="Content Creation" />
+          <h3>Content Creation</h3>
+          <p>Create compelling content that resonates with your audience and builds brand authority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/300" alt="John Doe" />
+          <h3>John Doe</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/300" alt="Jane Smith" />
+          <h3>Jane Smith</h3>
+          <p>Digital Marketing Manager</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/300" alt="Mark Wilson" />
+          <h3>Mark Wilson</h3>
+          <p>SEO Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/300" alt="Emily Davis" />
+          <h3>Emily Davis</h3>
+          <p>Content Strategist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-details">
+        <p>Have a project in mind? Get in touch with us today!</p>
+        <p><strong>Phone:</strong> <a href="tel:+9203257723651">+92 0325 7723651</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@trendhive.com">info@trendhive.com</a></p>
+      </div>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="cta">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 TrendHive. All Rights Reserved.</p>
+    <div class="container">
+      <p>© 2025 TrendHive. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
